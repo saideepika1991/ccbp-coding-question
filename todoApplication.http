@@ -1,0 +1,8 @@
+GET http://localhost:3000/todos/:todoId/
+
+###
+POST http://localhost:3000/todos/
+
+
+###
+GET http://localhost:4000/todos/?priority=high
