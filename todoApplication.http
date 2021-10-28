@@ -1,8 +1,33 @@
-GET http://localhost:3000/todos/:todoId/
+GET http://localhost:4000/todos/:todoId/
 
 ###
-POST http://localhost:3000/todos/
+POST http://localhost:4000/todos/
+Content-Type: application/json
+
+
+{
+    "id": "6",
+    "todo": "Learn Bharathanatyam",
+    "priority": "HIGH",
+    "status": "TODO"
+}
 
 
 ###
-GET http://localhost:4000/todos/?priority=high
+GET http://localhost:4000/todos/?priority=MEDIUM
+
+###
+GET http://localhost:4000/todos/
+
+###
+PUT http://localhost:4000/todos/:todoId/
+Content-Type : application/json
+
+{
+    "todo": "Watch Movie",
+    "priority": "HIGH",
+    "status": "TO DO"
+}
+
+###
+DELETE http://localhost:4000/todos/:todoId/
